@@ -1,20 +1,21 @@
 import './App.css';
-import {useEffect, useState} from "react";
-import axios from "axios";
-
+import MAIN from "./component/main";
+import Header from "./component/header";
+import Footer from "./component/footer";
+import {useState} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-    const [data, setData] = useState('')
 
-    useEffect(() => {
-        axios.get('/test/data')
-            .then(res => setData(res.data))
-            .catch(err => alert(err))
-    }, []);
+    const [fileCount , serFileCount] = useState(0)
 
     return (
+
         <div className="App">
-            안녕하세요 {data}
+            <Header/>
+            <br/>
+            <MAIN/>
+            <Footer/>
         </div>
     )
 }
