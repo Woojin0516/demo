@@ -6,7 +6,7 @@ const Footer =function (){
         <Card.Text>
             Wellcome to My File upload Programing...
             <br/>
-            Please call number 010 - 5773 - 6088
+            Please call number 010 - xxxx - xxxx
         </Card.Text>
     )
 }
